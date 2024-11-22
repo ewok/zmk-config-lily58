@@ -50,10 +50,10 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                                 &kp N6               &kp N7       &kp N8              &kp N9   &kp N0    &kp GRAVE
+&kp F1            &kp F2  &kp F3  &kp F4    &kp F5     &kp F6                                                 &kp F7               &kp F8       &kp F9              &kp F10  &kp F11   &kp F12
 &kp RIGHT         &kp Q   &kp W   &kp E     &kp R      &kp T                                                  &kp Y                &kp U        &kp I               &kp O    &kp P     &kp LEFT_BRACKET
 &mt LCTRL ESCAPE  &kp A   &kp S   &kp D     &kp F      &kp G                                                  &kp H                &kp J        &kp K               &kp L    &kp SEMI  &mt RCTRL SQT
-&kp LALT          &kp Z   &kp X   &kp C     &kp V      &kp B                &kp PG_UP      &kp PAGE_DOWN      &kp N                &kp M        &kp COMMA           &kp DOT  &kp FSLH  &mt RALT RIGHT_BRACKET
+&kp LALT          &kp Z   &kp X   &kp C     &kp V      &kp B                &kp PG_UP      &kp PAGE_DOWN      &kp N                &kp M        &kp COMMA           &kp DOT  &kp FSLH  &mt RALT DOUBLE_QUOTES
                                   &kp LGUI  &lt 2 TAB  &mt_twk LSHFT SPACE  &lt_h 1 RET    &lt_h 1 BACKSPACE  &mt_twk RSHFT SPACE  &lt 2 GRAVE  &mt RGUI LG(SPACE)
             >;
 
@@ -69,11 +69,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1               &kp F2        &kp F3         &kp F4          &kp F5            &kp F6                                             &kp F7                 &kp F8             &kp F9           &kp F10           &kp F11       &kp F12
-&kp PIPE             &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5                                       &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0  &kp BACKSLASH
-&mt LCTRL MINUS      &kp EXCL      &kp AT         &kp HASH        &kp DOLLAR        &kp PRCNT                                          &kp CARET              &kp AMPS           &kp STAR         &kp LPAR          &kp RPAR      &mt RCTRL EQUAL
-&mt LALT UNDERSCORE  &kp ASTERISK  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans    &trans             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SLASH     &mt RIGHT_ALT PLUS
-                                                  &trans          &trans            &trans                &trans    &kp LA(BACKSPACE)  &trans                 &trans             &trans
+&kp LC(LA(F1))       &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))    &kp LA(LC(F6))                                     &kp LA(LC(F7))         &kp LA(LC(F8))     &kp LA(LC(F9))   &kp LA(LC(F10))   &kp LA(LC(F11))  &kp LA(LC(F12))
+&kp PIPE             &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5                                       &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0     &kp BACKSLASH
+&mt LCTRL MINUS      &kp EXCL        &kp AT          &kp HASH        &kp DOLLAR        &kp PRCNT                                          &kp CARET              &kp AMPS           &kp STAR         &kp LPAR          &kp RPAR         &mt RCTRL EQUAL
+&mt LALT UNDERSCORE  &kp ASTERISK    &kp LESS_THAN   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans    &trans             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SLASH        &mt RIGHT_ALT PLUS
+                                                     &trans          &trans            &trans                &trans    &kp LA(BACKSPACE)  &trans                 &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
