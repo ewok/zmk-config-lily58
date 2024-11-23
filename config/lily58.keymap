@@ -92,7 +92,19 @@
 &trans             &trans          &trans           &trans        &trans        &trans                          &kp C_PP        &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
 &kp LCTRL          &trans          &trans           &trans        &trans        &trans                          &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW     &kp RIGHT   &kp C_BRIGHTNESS_DEC  &mt RCTRL K_APP
 &mt LALT CAPSLOCK  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans        &trans        &trans        &trans    &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp INS               &mt RALT DELETE
-                                                    &trans        &trans        &trans        &trans    &trans  &trans          &trans         &trans
+                                                    &trans        &trans        &trans        &to 3     &trans  &trans          &trans         &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        gaming {
+            bindings = <
+&kp ESCAPE      &kp M  &kp I  &kp F5        &kp F6   &to 0                                  &kp F7               &kp F8       &kp F9              &kp F10  &kp F11   &kp F12
+&kp CAPSLOCK    &kp Q  &kp W  &kp E         &kp R    &kp T                                  &kp Y                &kp U        &kp I               &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F    &kp G                                  &kp H                &kp J        &kp K               &kp L    &kp SEMI  &mt RCTRL SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V    &kp B      &kp PG_UP    &kp PAGE_DOWN  &kp N                &kp M        &kp COMMA           &kp DOT  &kp FSLH  &mt RALT DOUBLE_QUOTES
+                              &kp LEFT_ALT  &kp TAB  &kp SPACE  &kp ENTER    &kp ENTER      &mt_twk RSHFT SPACE  &lt 2 GRAVE  &mt RGUI LG(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
