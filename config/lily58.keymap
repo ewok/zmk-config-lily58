@@ -71,11 +71,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp LC(LA(F1))  &kp LA(LC(F2))               &kp LA(LC(F3))       &kp LA(LC(F4))        &kp LA(LC(F5))        &kp LA(LC(F6))                                        &kp LA(LC(F7))         &kp LA(LC(F8))              &kp LA(LC(F9))            &kp LA(LC(F10))             &kp LA(LC(F11))                       &kp LA(LC(F12))
-&none           &kp NUMBER_1                 &kp NUMBER_2         &kp NUMBER_3          &kp NUMBER_4          &kp NUMBER_5                                          &kp NUMBER_6           &kp NUMBER_7                &kp NUMBER_8              &kp NUMBER_9                &kp NUMBER_0                          &none
-&none           &mt_left LEFT_COMMAND EQUAL  &mt_left LALT SLASH  &mt_left LSHFT ASTRK  &mt_left LCTRL MINUS  &kp PLUS                                              &kp LEFT_ARROW         &mt_right RCTRL DOWN_ARROW  &mt_right RSHFT UP_ARROW  &mt_right RALT RIGHT_ARROW  &mt_right RIGHT_COMMAND LEFT_BRACKET  &none
-&none           &kp BACKSLASH                &kp LESS_THAN        &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &trans           &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET           &kp RIGHT_BRACE           &kp GREATER_THAN            &kp SLASH                             &none
-                                                                  &trans                &trans                &trans                &kp LG(SPACE)    &kp RG(SPACE)  &trans                 &trans                      &trans
+&kp LC(LA(F1))  &kp LA(LC(F2))               &kp LA(LC(F3))       &kp LA(LC(F4))        &kp LA(LC(F5))        &kp LA(LC(F6))                                      &kp LA(LC(F7))         &kp LA(LC(F8))              &kp LA(LC(F9))            &kp LA(LC(F10))             &kp LA(LC(F11))                       &kp LA(LC(F12))
+&none           &kp NUMBER_1                 &kp NUMBER_2         &kp NUMBER_3          &kp NUMBER_4          &kp NUMBER_5                                        &kp NUMBER_6           &kp NUMBER_7                &kp NUMBER_8              &kp NUMBER_9                &kp NUMBER_0                          &none
+&none           &mt_left LEFT_COMMAND EQUAL  &mt_left LALT SLASH  &mt_left LSHFT ASTRK  &mt_left LCTRL MINUS  &kp PLUS                                            &kp LEFT_ARROW         &mt_right RCTRL DOWN_ARROW  &mt_right RSHFT UP_ARROW  &mt_right RALT RIGHT_ARROW  &mt_right RIGHT_COMMAND LEFT_BRACKET  &none
+&none           &kp BACKSLASH                &kp LESS_THAN        &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &trans         &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET           &kp RIGHT_BRACE           &kp GREATER_THAN            &kp SLASH                             &none
+                                                                  &trans                &trans                &kp SPACE             &kp LG(RET)    &kp BACKSPACE  &kp SPACE              &trans                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -90,11 +90,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans            &trans  &trans   &trans   &trans                     &trans    &trans         &trans           &trans      &trans                &trans
-&trans  &kp CAPSLOCK      &kp F1  &kp F2   &kp F3   &kp F4                     &kp C_PP  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &kp C_BRIGHTNESS_INC  &trans
-&trans  &kp LEFT_COMMAND  &kp F5  &kp F6   &kp F7   &kp F8                     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp C_BRIGHTNESS_DEC  &trans
-&trans  &kp PRINTSCREEN   &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp INS   &kp TAB        &kp LS(TAB)      &kp DELETE  &kp LC(PRINTSCREEN)   &trans
-                                  &trans   &trans   &trans   &to 3     &to 3   &trans    &trans         &trans
+&trans  &trans            &trans  &trans   &trans   &trans                           &trans         &trans         &trans           &trans      &trans                &trans
+&trans  &kp CAPSLOCK      &kp F1  &kp F2   &kp F3   &kp F4                           &kp C_PP       &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &kp C_BRIGHTNESS_INC  &trans
+&trans  &kp LEFT_COMMAND  &kp F5  &kp F6   &kp F7   &kp F8                           &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp C_BRIGHTNESS_DEC  &trans
+&trans  &kp PRINTSCREEN   &kp F9  &kp F10  &kp F11  &kp F12        &trans    &trans  &kp INS        &kp TAB        &kp LS(TAB)      &kp DELETE  &kp LC(PRINTSCREEN)   &trans
+                                  &trans   &trans   &kp LG(SPACE)  &to 3     &to 3   &kp RG(SPACE)  &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
