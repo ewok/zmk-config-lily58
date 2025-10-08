@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &lt { flavor = "balanced"; };
@@ -76,7 +75,7 @@
 &kp F1  &kp F2                   &kp F3           &kp F4            &kp F5                   &kp F6                                     &kp F7       &kp F8             &kp F9             &kp F10           &kp F11                       &kp F12
 &none   &kp Q                    &kp W            &kp E             &kp R                    &kp T                                      &kp Y        &kp U              &kp I              &kp O             &kp P                         &none
 &none   &mt_left LEFT_COMMAND A  &mt_left LALT S  &mt_left LSHFT D  &mt_left LEFT_CONTROL F  &kp G                                      &kp H        &mt_right RCTRL J  &mt_right RSHFT K  &mt_right RALT L  &mt_right RIGHT_COMMAND SEMI  &none
-&none   &kp Z                    &kp X            &kp C             &kp V                    &kp B        &none        &none            &kp N        &kp M              &kp COMMA          &kp DOT           &kp FSLH                      &none
+&none   &kp Z                    &kp X            &kp C             &kp V                    &kp B        &none        &none            &kp N        &kp M              &kp COMMA          &kp DOT           &kp SQT                       &none
                                                   &none             &kp ESCAPE               &lt 2 SPACE  &lt 1 RET    &lt 1 BACKSPACE  &lt 2 SPACE  &lt 5 GRAVE        &none
             >;
 
@@ -111,11 +110,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans         &trans           &trans      &trans                &kp LC(PRINTSCREEN)
-&trans             &trans          &trans           &trans        &trans        &trans                          &kp C_PP        &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp LCTRL          &trans          &trans           &trans        &trans        &trans                          &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW     &kp RIGHT   &kp C_BRIGHTNESS_DEC  &mt RCTRL K_APP
-&mt LALT CAPSLOCK  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans        &trans        &trans        &trans    &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp INS               &mt RALT DELETE
-                                                    &trans        &trans        &trans        &to 3     &trans  &trans          &trans         &trans
+&trans  &trans            &trans  &trans   &trans   &trans                     &trans    &trans         &trans           &trans      &trans                &trans
+&trans  &kp CAPSLOCK      &kp F1  &kp F2   &kp F3   &kp F4                     &kp C_PP  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &kp C_BRIGHTNESS_INC  &trans
+&trans  &kp LEFT_COMMAND  &kp F5  &kp F6   &kp F7   &kp F8                     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp C_BRIGHTNESS_DEC  &trans
+&trans  &kp PRINTSCREEN   &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp INS   &kp TAB        &kp LS(TAB)      &kp DELETE  &kp LC(PRINTSCREEN)   &trans
+                                  &trans   &trans   &trans   &to 3     &to 3   &trans    &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
