@@ -92,11 +92,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp LC(LA(F1))       &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))    &kp LA(LC(F6))                                     &kp LA(LC(F7))         &kp LA(LC(F8))     &kp LA(LC(F9))   &kp LA(LC(F10))   &kp LA(LC(F11))  &kp LA(LC(F12))
-&kp PIPE             &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5                                       &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0     &kp BACKSLASH
-&mt LCTRL MINUS      &kp EXCL        &kp AT          &kp HASH        &kp DOLLAR        &kp PRCNT                                          &kp CARET              &kp AMPS           &kp STAR         &kp LPAR          &kp RPAR         &mt RCTRL EQUAL
-&mt LALT UNDERSCORE  &kp ASTERISK    &kp LESS_THAN   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans    &trans             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SLASH        &mt RIGHT_ALT PLUS
-                                                     &trans          &trans            &trans                &trans    &kp LA(BACKSPACE)  &trans                 &trans             &trans
+&kp LC(LA(F1))  &kp LA(LC(F2))               &kp LA(LC(F3))       &kp LA(LC(F4))        &kp LA(LC(F5))        &kp LA(LC(F6))                                        &kp LA(LC(F7))         &kp LA(LC(F8))              &kp LA(LC(F9))            &kp LA(LC(F10))             &kp LA(LC(F11))                       &kp LA(LC(F12))
+&none           &kp NUMBER_1                 &kp NUMBER_2         &kp NUMBER_3          &kp NUMBER_4          &kp NUMBER_5                                          &kp NUMBER_6           &kp NUMBER_7                &kp NUMBER_8              &kp NUMBER_9                &kp NUMBER_0                          &none
+&none           &mt_left LEFT_COMMAND EQUAL  &mt_left LALT SLASH  &mt_left LSHFT ASTRK  &mt_left LCTRL MINUS  &kp PLUS                                              &kp LEFT_ARROW         &mt_right RCTRL DOWN_ARROW  &mt_right RSHFT UP_ARROW  &mt_right RALT RIGHT_ARROW  &mt_right RIGHT_COMMAND LEFT_BRACKET  &none
+&none           &kp BACKSLASH                &kp LESS_THAN        &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &trans           &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET           &kp RIGHT_BRACE           &kp GREATER_THAN            &kp SLASH                             &none
+                                                                  &trans                &trans                &trans                &kp LG(SPACE)    &kp RG(SPACE)  &trans                 &trans                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
