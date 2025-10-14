@@ -94,7 +94,7 @@
 &trans  &kp CAPSLOCK      &kp F1                &kp F2             &kp F3             &kp F4                           &kp C_PP              &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE               &kp C_BRIGHTNESS_INC  &trans
 &trans  &kp LEFT_COMMAND  &mt_left LEFT_ALT F5  &mt_left LSHFT F6  &mt_left LCTRL F7  &kp F8                           &kp LEFT              &kp DOWN       &kp UP_ARROW     &kp RIGHT                &kp C_BRIGHTNESS_DEC  &trans
 &trans  &kp PRINTSCREEN   &kp F9                &kp F10            &kp F11            &kp F12        &trans    &trans  &mt_right RCTRL HOME  &kp PAGE_DOWN  &kp PG_UP        &mt_right RIGHT_ALT END  &kp LC(PRINTSCREEN)   &trans
-                                                &trans             &mo 5              &kp LG(SPACE)  &to 3     &to 3   &kp RG(SPACE)         &mo 5          &trans
+                                                &trans             &mo 5              &kp LG(SPACE)  &none     &none   &kp RG(SPACE)         &mo 5          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -118,7 +118,7 @@
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp F5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp F8      &kp M         &kp I         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &to 0         &trans    &trans  &to 0   &trans  &trans
+                                        &trans        &to 0         &trans        &trans    &trans  &trans  &to 0   &trans
             >;
         };
 
@@ -128,7 +128,7 @@
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans        &trans        &trans        &trans        &trans        &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans        &trans        &trans        &trans        &trans        &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans        &trans        &trans        &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans
+                                        &trans        &trans        &trans        &to 3     &to 3   &trans        &trans        &trans
             >;
         };
     };
