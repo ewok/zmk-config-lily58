@@ -82,6 +82,44 @@
             key-positions = <14 15>;
             layers = <1>;
         };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <15 16>;
+            layers = <1>;
+        };
+
+        doll {
+            bindings = <&kp DOLLAR>;
+            key-positions = <18 19>;
+            layers = <1>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        amp {
+            bindings = <&kp AMPS>;
+            key-positions = <19 20>;
+            layers = <1>;
+        };
+
+        rconn {
+            bindings = <&mo 5>;
+            key-positions = <54 57>;
+            timeout-ms = <1500>;
+            layers = <0>;
+        };
+
+        lconn {
+            bindings = <&mo 5>;
+            key-positions = <50 53>;
+            timeout-ms = <1500>;
+            layers = <0>;
+        };
     };
 
     keymap {
