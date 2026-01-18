@@ -60,6 +60,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <125>;
+            layers = <0>;
+        };
+
+        land {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <52 55>;
+            timeout-ms = <1500>;
+            layers = <0>;
+        };
+
+        ex {
+            bindings = <&kp EXCL>;
+            key-positions = <14 15>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,10 +115,10 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans             &trans         &trans            &trans            &trans                                          &trans                 &trans             &trans           &trans            &trans            &trans
-&trans  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                                    &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0      &trans
-&trans  &kp EQUAL          &kp FSLH       &hml LSHFT ASTRK  &kp MINUS         &kp KP_PLUS                                     &kp PERCENT            &kp UNDER          &kp HASH         &kp BACKSLASH     &kp LEFT_BRACKET  &trans
-&trans  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans     &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SQT           &trans
+&trans  &trans             &trans         &trans            &trans            &trans                                          &trans                 &trans             &trans           &trans            &trans        &trans
+&trans  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                                    &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0  &trans
+&trans  &kp EQUAL          &kp FSLH       &hml LSHFT ASTRK  &kp MINUS         &kp KP_PLUS                                     &kp PERCENT            &kp UNDER          &kp HASH         &kp BACKSLASH     &kp COLON     &trans
+&trans  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans     &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SQT       &trans
                                           &trans            &kp ESCAPE        &trans                &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE          &trans
             >;
 
@@ -148,7 +172,7 @@
 &none         &none         &none         &none         &none         &none                  &none  &none         &none         &none         &none         &none
 &none         &none         &none         &none         &bt BT_CLR    &none                  &none  &bt BT_CLR    &none         &none         &none         &none
 &none         &none         &none         &none         &none         &none  &none    &none  &none  &none         &none         &none         &none         &none
-                                          &none         &none         &none  &to 3    &to 3  &none  &none         &none
+                                          &none         &none         &to 3  &none    &none  &to 3  &none         &none
             >;
         };
     };
