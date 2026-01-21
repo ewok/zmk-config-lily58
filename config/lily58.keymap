@@ -153,11 +153,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans             &trans         &trans            &trans            &trans                                          &trans                 &trans             &trans           &trans            &trans        &trans
-&trans  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                                    &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0  &trans
-&trans  &kp EQUAL          &kp FSLH       &hml LSHFT ASTRK  &kp MINUS         &kp KP_PLUS                                     &kp PERCENT            &kp UNDER          &kp HASH         &kp BACKSLASH     &kp COLON     &trans
-&trans  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans     &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SQT       &trans
-                                          &trans            &kp ESCAPE        &trans                &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE          &trans
+&trans  &trans             &trans         &trans          &trans            &trans                                          &trans                 &trans             &trans           &trans            &trans        &trans
+&trans  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5                                    &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0  &trans
+&trans  &kp EQUAL          &kp FSLH       &kp ASTRK       &kp MINUS         &kp KP_PLUS                                     &kp PERCENT            &kp UNDER          &kp HASH         &kp BACKSLASH     &kp COLON     &trans
+&trans  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans     &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SQT       &trans
+                                          &trans          &kp ESCAPE        &trans                &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
