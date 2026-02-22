@@ -64,14 +64,14 @@
         compatible = "zmk,combos";
 
         rconn {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <54 43>;
             timeout-ms = <1500>;
             layers = <0>;
         };
 
         lconn {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <53 42>;
             timeout-ms = <1500>;
             layers = <0>;
@@ -117,6 +117,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        dummy {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
 
         connect {
